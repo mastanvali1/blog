@@ -1,0 +1,37 @@
+{% extends 'homepage.html' %}
+{% block content %} 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='rstyle.css') }}">
+     <div class="container">
+        <div class="box form-box">
+            <header>Sign Up</header>
+            <form action="" method="post">
+                <div class="field input">
+                    <label for="">Username</label>
+                    <input name="Username" type="text" id="username" required>
+                </div>
+                <div class="field input">
+                    <label for="">Mobile</label>
+                    <input name="Mobile" type="text" id="Mobile" required>
+                </div>
+                <div class="field input">
+                    <label for="">Address</label>
+                    <input name="Address" type="text" id="Address" required>
+                </div>
+                <div class="field input">
+                    <label for="">Email</label>
+                    <input name="Email" type="text" id="Email" required>
+                </div>
+                <div class="field input">
+                    <label for="">Password</label>
+                    <input name="Password" type="password" id="Password" required>
+                </div>
+                <div class="field">
+                    <input name="submit" class="btn" type="submit" value="Register" required>
+                </div>
+                <div class="links">
+                     If you have Account! <a href="login" class="login">Login</a>
+                </div>
+            </form>
+        </div>
+     </div>
+{% endblock %}

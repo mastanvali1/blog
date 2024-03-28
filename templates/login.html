@@ -1,0 +1,25 @@
+{% extends 'homepage.html' %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='lstyle.css') }}">
+    <div class="container">
+        <div class="box form-box">
+            <header>Login</header>
+            <form action="" method="post">
+                <div class="field input">
+                    <label for="">Username</label>
+                    <input name="Username" type="text" id="username" required>
+                </div>
+                <div class="field input">
+                    <label for="">Password</label>
+                    <input name="Password" type="password" id="Password" required>
+                </div>
+                <div class="field">
+                    <input name="submit" class="btn" type="submit" value="Login" required>
+                </div>
+                <div class="links">
+                    Don't have account?<span><a href="reg" class="sign">Sign Up Now</a></span>
+               </div>
+            </form>
+        </div>
+     </div>
+{% endblock %}
